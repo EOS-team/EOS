@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config RROS_OOB_NET
+        bool "Out-of-band networking (EXPERIMENTAL)"
+	default n
+	select NET_OOB
+	select NET_SCHED
+	select NET_SCH_OOB
+	select INET
+	select VLAN_8021Q
+	help
+	This option enables preliminary networking support for Rros.

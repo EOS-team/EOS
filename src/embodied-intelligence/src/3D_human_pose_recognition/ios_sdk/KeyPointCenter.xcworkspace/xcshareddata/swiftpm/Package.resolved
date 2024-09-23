@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "stores",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/omaralbeik/Stores",
+      "state" : {
+        "revision" : "638291752db347e40ea4932be424585d47447d32",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

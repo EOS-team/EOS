@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{F8CB6255-7D53-0EAD-5933-12F98B411DBF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TDPAvatarController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/TDPAvatarController.cs" Line="731" Column="67" />
+      <File FileName="Assets/Scripts/MoveNetSample.cs" Line="145" Column="163" />
+      <File FileName="Assets/Scripts/CharacterDriven/oneEuroFilter.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/LowPassFilter.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/KalmanFilter.cs" />
+      <File FileName="Assets/Scripts/DrivenTxt.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/ConstantVelocity3DModel.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/DiscreteKalmanFilter.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/BaseKalmanFilter.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/MatrixF.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/KeyPoint.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/AvatarBones.cs" />
+      <File FileName="Assets/Scripts/CharacterDriven/AvatarBonePoint.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ForDebug" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="CharacterDriven" expanded="True" />
+                <Node name="TDPAvatarController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0a79d29b-6112-47f4-8dc3-99c7e53e9db4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/future/Desktop/KeyPointCenter/UnityDEBUG/ForDebug/Assets/Scripts/TDPAvatarController.cs" relfile="Assets/Scripts/TDPAvatarController.cs" line="920" column="1" />
+      <Breakpoint file="/Users/future/Desktop/KeyPointCenter/UnityDEBUG/ForDebug/Assets/Scripts/TDPAvatarController.cs" relfile="Assets/Scripts/TDPAvatarController.cs" line="731" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

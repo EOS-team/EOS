@@ -1,0 +1,19 @@
+
+# DOVETAIL dual-kernel interface
+config HAVE_DOVETAIL
+	bool
+
+# Selecting ARCH_WANT_IRQS_OFF_ACTIVATE_MM in this generic Kconfig
+# portion is ugly, but the whole ARCH_WANT_IRQS_OFF_ACTIVATE_MM logic
+# is a temporary kludge which is meant to disappear anyway. See
+# the related comments in exec_mmap() for details.
+config DOVETAIL
+	bool "Dovetail interface"
+	depends on HAVE_DOVETAIL
+	select IRQ_PIPELINE
+	select ARCH_WANT_IRQS_OFF_ACTIVATE_MM
+	default n
+	help
+	  Activate this option if you want to enable the interface for
+	  running a secondary kernel side-by-side with Linux (aka
+	  "dual kernel" configuration).

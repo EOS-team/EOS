@@ -1,0 +1,58 @@
+{
+    "name": "Unity.TestTools.CodeCoverage.Editor",
+    "rootNamespace": "UnityEditor.TestTools.CodeCoverage",
+    "references": [
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:19c3df1967929405fba735480b3da9a7",
+        "GUID:eecdf9bdfcb2949619db458f3e24c5e2",
+        "GUID:49818357e697641afb75d2f8acaf1861"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "ReportGeneratorMerged.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_2019_2_OR_NEWER"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.test-framework",
+            "expression": "1.0.16",
+            "define": "CONDITIONAL_IGNORE_SUPPORTED"
+        },
+        {
+            "name": "com.unity.burst",
+            "expression": "1.1.1",
+            "define": "BURST_INSTALLED"
+        },
+        {
+            "name": "com.unity.test-framework",
+            "expression": "1.1.18",
+            "define": "TEST_FRAMEWORK_1_1_18_OR_NEWER"
+        },
+        {
+            "name": "Unity",
+            "expression": "2021.1.0b10",
+            "define": "NO_COV_EDITORPREF"
+        },
+        {
+            "name": "com.unity.test-framework",
+            "expression": "1.3.0",
+            "define": "TEST_FRAMEWORK_1_3_OR_NEWER"
+        },
+        {
+            "name": "com.unity.test-framework",
+            "expression": "2.0.0",
+            "define": "TEST_FRAMEWORK_2_0_OR_NEWER"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,28 @@
+{
+  "arch": "arm",
+  "crt-static-respected": true,
+  "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+  "dynamic-linking": true,
+  "env": "gnu",
+  "executables": true,
+  "features": "+strict-align,+v6",
+  "function-sections": false,
+  "has-elf-tls": true,
+  "has-rpath": true,
+  "is-builtin": true,
+  "linker-is-gnu": true,
+  "llvm-target": "arm-unknown-linux-gnueabi",
+  "max-atomic-width": 64,
+  "os": "linux",
+  "position-independent-executables": true,
+  "pre-link-args": {
+    "gcc": [
+      "-Wl,--as-needed",
+      "-Wl,-z,noexecstack"
+    ]
+  },
+  "relocation-model": "static",
+  "target-family": "unix",
+  "target-mcount": "\u0001__gnu_mcount_nc",
+  "target-pointer-width": "32"
+}

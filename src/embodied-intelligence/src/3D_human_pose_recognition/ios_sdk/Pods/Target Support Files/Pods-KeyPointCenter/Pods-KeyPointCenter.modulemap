@@ -1,0 +1,6 @@
+module Pods_KeyPointCenter {
+  umbrella header "Pods-KeyPointCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}

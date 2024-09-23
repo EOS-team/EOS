@@ -1,0 +1,12 @@
+/dts-v1/;
+#include "bcm2837-rpi-3-b.dts"
+
+&uart0 {
+	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart0_gpio32>;
+};
+
+&uart1 {
+	status = "disabled";
+};

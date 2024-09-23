@@ -1,0 +1,42 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "警告01": "*********************************************************************************",
+            "警告02": "The C# extension was unable to automatically decode projects in the current",
+            "警告03": "workspace to create a runnable launch.json file. A template launch.json file has",
+            "警告04": "been created as a placeholder.",
+            "警告05": "",
+            "警告06": "If the server is currently unable to load your project, you can attempt to",
+            "警告07": "resolve this by restoring any missing project dependencies (example: run 'dotnet",
+            "警告08": "restore') and by fixing any reported errors from building the projects in your",
+            "警告09": "workspace.",
+            "警告10": "If this allows the server to now load your project then --",
+            "警告11": "  * Delete this file",
+            "警告12": "  * Open the Visual Studio Code command palette (View->Command Palette)",
+            "警告13": "  * run the command: '.NET: Generate Assets for Build and Debug'.",
+            "警告14": "",
+            "警告15": "If your project requires a more complex launch configuration, you may wish to",
+            "警告16": "delete this configuration and pick a different template using the 'Add",
+            "警告17": "Configuration...' button at the bottom of this file.",
+            "警告18": "*********************************************************************************",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<insert-target-framework-here>/<insert-project-name-here>.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

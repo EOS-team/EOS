@@ -1,0 +1,16 @@
+{
+    "name": "Unity.TestTools.CodeCoverage.Editor.Compatibility",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "!UNITY_2019_2_OR_NEWER"
+    ],
+    "versionDefines": []
+}

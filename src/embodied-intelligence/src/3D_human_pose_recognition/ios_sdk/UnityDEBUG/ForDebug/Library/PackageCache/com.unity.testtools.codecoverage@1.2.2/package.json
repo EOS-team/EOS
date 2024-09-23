@@ -1,0 +1,36 @@
+{
+  "name": "com.unity.testtools.codecoverage",
+  "displayName": "Code Coverage",
+  "version": "1.2.2",
+  "unity": "2019.3",
+  "unityRelease": "0a8",
+  "description": "Use this package to export code coverage data and reports from your automated tests. Additionally, the Code Coverage package offers a Coverage Recording feature which allows capturing coverage data on demand, for manual testing or when there are no automated tests in the project.",
+  "keywords": [
+    "test",
+    "coverage",
+    "testing",
+    "opencover"
+  ],
+  "dependencies": {
+    "com.unity.test-framework": "1.0.16",
+    "com.unity.settings-manager": "1.0.1"
+  },
+  "samples": [
+    {
+      "displayName": "Code Coverage Tutorial",
+      "description": "The Code Coverage Tutorial will give you an insight into what Code Coverage is and how you can identify areas of your code that need more testing, even if you haven't written any automated tests.",
+      "path": "Samples~/Tutorial"
+    }
+  ],
+  "relatedPackages": {
+    "com.unity.testtools.codecoverage.tests": "1.2.2"
+  },
+  "upmCi": {
+    "footprint": "105bcacf22e3f4f034762d198418f17fddb215fe"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git",
+    "type": "git",
+    "revision": "4178e047a15e206f715d23af69b02acd367bb000"
+  }
+}

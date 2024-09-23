@@ -1,0 +1,28 @@
+# Rros real-time core
+config HAVE_ARCH_RROS
+	bool
+
+menuconfig Rros
+	bool "BUPT real-time core"
+	depends on HAVE_ARCH_RROS
+	select DOVETAIL
+	select DEVTMPFS
+	help
+
+	  The Rros core is a real-time component of the Linux kernel,
+	  which delivers very short and bounded response time to
+	  interrupt and task events.  Rros runs asynchronously to the
+	  common kernel services, on the high-priority, out-of-band
+	  stage managed by the Dovetail layer.
+
+if Rros
+
+source "kernel/rros/Kconfig"
+
+if WARN_CPUFREQ_GOVERNOR
+comment "WARNING! CPU_FREQ governors other than 'performance'"
+comment "or 'powersave' may significantly increase latency"
+comment "on this platform during the frequency transitions."
+endif
+
+endif

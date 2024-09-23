@@ -1,0 +1,1 @@
+pub const RROS_HMDIAG_SYSDEMOTE: i32 = 2;

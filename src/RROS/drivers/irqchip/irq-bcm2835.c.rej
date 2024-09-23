@@ -1,0 +1,81 @@
+diff a/drivers/irqchip/irq-bcm2835.c b/drivers/irqchip/irq-bcm2835.c	(rejected hunks)
+@@ -89,20 +99,76 @@ static void __exception_irq_entry bcm2835_handle_irq(
+ 	struct pt_regs *regs);
+ static void bcm2836_chained_handle_irq(struct irq_desc *desc);
+ 
++static inline unsigned int hwirq_to_fiq(unsigned long hwirq)
++{
++	hwirq -= NUMBER_IRQS;
++	/*
++	 * The hwirq numbering used in this driver is:
++	 *   BASE (0-7) GPU1 (32-63) GPU2 (64-95).
++	 * This differ from the one used in the FIQ register:
++	 *   GPU1 (0-31) GPU2 (32-63) BASE (64-71)
++	 */
++	if (hwirq >= 32)
++		return hwirq - 32;
++
++	return hwirq + 64;
++}
++
+ static void armctrl_mask_irq(struct irq_data *d)
+ {
+-	writel_relaxed(HWIRQ_BIT(d->hwirq), intc.disable[HWIRQ_BANK(d->hwirq)]);
++	if (d->hwirq >= NUMBER_IRQS)
++		writel_relaxed(REG_FIQ_DISABLE, intc.base + REG_FIQ_CONTROL);
++	else
++		writel_relaxed(HWIRQ_BIT(d->hwirq),
++			       intc.disable[HWIRQ_BANK(d->hwirq)]);
+ }
+ 
+ static void armctrl_unmask_irq(struct irq_data *d)
+ {
+-	writel_relaxed(HWIRQ_BIT(d->hwirq), intc.enable[HWIRQ_BANK(d->hwirq)]);
++	if (d->hwirq >= NUMBER_IRQS) {
++		if (num_online_cpus() > 1) {
++			unsigned int data;
++
++			if (!intc.local_base) {
++				pr_err("FIQ is disabled due to missing arm_local_intc\n");
++				return;
++			}
++
++			data = readl_relaxed(intc.local_base +
++					     ARM_LOCAL_GPU_INT_ROUTING);
++
++			data &= ~0xc;
++			data |= (1 << 2);
++			writel_relaxed(data,
++				       intc.local_base +
++				       ARM_LOCAL_GPU_INT_ROUTING);
++		}
++
++		writel_relaxed(REG_FIQ_ENABLE | hwirq_to_fiq(d->hwirq),
++			       intc.base + REG_FIQ_CONTROL);
++	} else {
++		writel_relaxed(HWIRQ_BIT(d->hwirq),
++			       intc.enable[HWIRQ_BANK(d->hwirq)]);
++	}
++}
++
++#ifdef CONFIG_ARM64
++void bcm2836_arm_irqchip_spin_gpu_irq(void);
++
++static void armctrl_ack_irq(struct irq_data *d)
++{
++	bcm2836_arm_irqchip_spin_gpu_irq();
+ }
+ 
++#endif
++
+ static struct irq_chip armctrl_chip = {
+ 	.name = "ARMCTRL-level",
+ 	.irq_mask = armctrl_mask_irq,
+-	.irq_unmask = armctrl_unmask_irq
++	.irq_unmask = armctrl_unmask_irq,
++#ifdef CONFIG_ARM64
++	.irq_ack    = armctrl_ack_irq
++#endif
+ };
+ 
+ static int armctrl_xlate(struct irq_domain *d, struct device_node *ctrlr,

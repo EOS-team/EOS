@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>douyin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>awvohae4atpw6gqj</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>douyinopensdk</string>
+		<string>douyinliteopensdk</string>
+		<string>douyinsharesdk</string>
+		<string>snssdk1128</string>
+	</array>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_adhp._tcp</string>
+	</array>
+</dict>
+</plist>

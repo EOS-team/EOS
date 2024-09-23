@@ -1,0 +1,37 @@
+{
+  "arch": "riscv32",
+  "code-model": "medium",
+  "cpu": "generic-rv32",
+  "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+  "disable-redzone": true,
+  "eliminate-frame-pointer": false,
+  "emit-debug-gdb-scripts": false,
+  "env": "gnu",
+  "features": "+m,+a,+c",
+  "function-sections": false,
+  "is-builtin": true,
+  "linker-flavor": "gcc",
+  "linker-is-gnu": true,
+  "llvm-target": "riscv32",
+  "max-atomic-width": 32,
+  "needs-plt": true,
+  "os": "none",
+  "panic-strategy": "abort",
+  "position-independent-executables": true,
+  "pre-link-args": {
+    "gcc": [
+      "-Wl,--as-needed",
+      "-Wl,-z,noexecstack",
+      "-m32"
+    ]
+  },
+  "relocation-model": "static",
+  "relro-level": "full",
+  "stack-probes": {
+    "kind": "none"
+  },
+  "target-c-int-width": "32",
+  "target-endian": "little",
+  "target-pointer-width": "32",
+  "vendor": ""
+}

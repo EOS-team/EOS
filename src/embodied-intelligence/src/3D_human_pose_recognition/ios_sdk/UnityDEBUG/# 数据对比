@@ -1,0 +1,112 @@
+# 数据对比
+
+Swift：26 - 原来的值：0.55720776, 	-0.43533844, 	-0.55720776, 	0.43533844
+Unity：26 - 原来的值：	0.55721, 	-0.43534, 		-0.55721, 		0.43534
+
+【DEBUG - rotation】idx-24: simd_quatf(real: 0.7516373, imag: SIMD3<Float>(-0.0300875, 0.6530087, -0.089912534))
+【DEBUG - rotation】idx-27: simd_quatf(real: 0.6724105, imag: SIMD3<Float>(-0.010685712, -0.10931429, -0.73223555))
+【DEBUG - rotation】idx-31: simd_quatf(real: 0.6724105, imag: SIMD3<Float>(-0.010685682, -0.10931432, -0.73223555))
+#【DEBUG - rotation】idx-26: simd_quatf(real: 0.5781614, imag: SIMD3<Float>(0.0027160048, -0.10980177, -0.8087238))
+Swift: 26 - 被 24 改动的值: 	0.0027160048, 	-0.10980177, 	-0.8087238, 	0.5781614
+Unity: 26 - 被 24 改动的值:	0.00272, 		-0.10978, 		-0.80857, 		0.57806
+【DEBUG - rotation】idx-25: simd_quatf(real: 0.6787747, imag: SIMD3<Float>(-0.011639208, -0.10921693, -0.7263398))
+【DEBUG - rotation】idx-29: simd_quatf(real: 0.59635097, imag: SIMD3<Float>(0.43455946, 0.32740963, -0.59050417))
+【DEBUG - rotation】idx-0: simd_quatf(real: 0.55292284, imag: SIMD3<Float>(0.51093626, 0.39793167, -0.52463275))
+【DEBUG - rotation】idx-1: simd_quatf(real: 0.5752812, imag: SIMD3<Float>(0.52780694, 0.3752679, -0.5000137))
+【DEBUG - rotation】idx-2: simd_quatf(real: 0.7800012, imag: SIMD3<Float>(-0.033569295, 0.6189176, -0.08820862))
+【DEBUG - rotation】idx-30: simd_quatf(real: 0.57622105, imag: SIMD3<Float>(-0.5007911, 0.45054835, 0.46319816))
+【DEBUG - rotation】idx-5: simd_quatf(real: 0.5099472, imag: SIMD3<Float>(-0.5527951, 0.52576566, 0.3978827))
+【DEBUG - rotation】idx-6: simd_quatf(real: 0.49210575, imag: SIMD3<Float>(-0.52933586, 0.54937845, 0.41974676))
+【DEBUG - rotation】idx-7: simd_quatf(real: -0.026326982, imag: SIMD3<Float>(-0.7222682, 0.09166221, 0.6852753))
+【DEBUG - rotation】idx-19: simd_quatf(real: -0.69604075, imag: SIMD3<Float>(0.108605236, -0.016392142, -0.7098112))
+【DEBUG - rotation】idx-20: simd_quatf(real: -0.7827351, imag: SIMD3<Float>(0.10981402, -0.0020747185, -0.6128874))
+【DEBUG - rotation】idx-21: simd_quatf(real: -0.2382178, imag: SIMD3<Float>(0.08516592, -0.06935392, -0.9651723))
+【DEBUG - rotation】idx-22: simd_quatf(real: -0.050965294, imag: SIMD3<Float>(0.07047725, -0.084238335, -0.992828))
+【DEBUG - rotation】idx-15: simd_quatf(real: 0.7098104, imag: SIMD3<Float>(-0.016388834, -0.10860407, -0.69604194))
+【DEBUG - rotation】idx-16: simd_quatf(real: 0.6128862, imag: SIMD3<Float>(-0.0020729005, -0.10981414, -0.7827362))
+【DEBUG - rotation】idx-17: simd_quatf(real: 0.9651721, imag: SIMD3<Float>(-0.0693528, -0.08516744, -0.23821941))
+【DEBUG - rotation】idx-18: simd_quatf(real: 0.9928282, imag: SIMD3<Float>(-0.08423737, -0.07047874, -0.050966963))
+
+【DEBUG - rotation】idx-27: simd_quatf(real: 0.60939586, imag: SIMD3<Float>(0.05531925, 0.0213826, -0.7907646))
+【DEBUG - rotation】idx-31: simd_quatf(real: 0.5198833, imag: SIMD3<Float>(-0.42681712, 0.47599137, -0.5670439))
+【DEBUG - rotation】idx-26: simd_quatf(real: 0.16314681, imag: SIMD3<Float>(-0.77636415, 0.60404277, -0.08185942))
+【DEBUG - rotation】idx-25: simd_quatf(real: -0.2657867, imag: SIMD3<Float>(-0.61577773, 0.57273465, 0.47270048))
+【DEBUG - rotation】idx-29: simd_quatf(real: -0.29116666, imag: SIMD3<Float>(-0.5190733, 0.6523121, -0.47031972))
+【DEBUG - rotation】idx-0: simd_quatf(real: -0.586081, imag: SIMD3<Float>(-0.77466846, 0.21649933, -0.10402715))
+【DEBUG - rotation】idx-1: simd_quatf(real: -0.5279547, imag: SIMD3<Float>(-0.72755116, -0.25578043, 0.35801405))
+【DEBUG - rotation】idx-2: simd_quatf(real: -0.38282815, imag: SIMD3<Float>(-0.08236518, -0.9209485, 0.023370422))
+【DEBUG - rotation】idx-30: simd_quatf(real: -0.37153405, imag: SIMD3<Float>(0.4420199, 0.5919257, 0.56314456))
+【DEBUG - rotation】idx-5: simd_quatf(real: -0.77500606, imag: SIMD3<Float>(0.58596236, 0.10257208, 0.21630651))
+【DEBUG - rotation】idx-6: simd_quatf(real: -0.70176446, imag: SIMD3<Float>(0.49459216, -0.40397286, -0.31839564))
+【DEBUG - rotation】idx-7: simd_quatf(real: -0.08311287, imag: SIMD3<Float>(0.3000709, -0.016420975, -0.95121706))
+
+【DEBUG - rotation】idx-31: simd_quatf(real: 0.60161626, imag: SIMD3<Float>(0.054353327, 0.022808194, -0.7962164))
+【DEBUG - rotation】idx-26: simd_quatf(real: -0.19536254, imag: SIMD3<Float>(-0.5531431, 0.5998661, 0.5443623))
+【DEBUG - rotation】idx-25: simd_quatf(real: 0.024803385, imag: SIMD3<Float>(0.5576198, -0.7166759, -0.42002362))
+【DEBUG - rotation】idx-29: simd_quatf(real: -0.6108012, imag: SIMD3<Float>(-0.6935326, 0.3616786, 0.124203235))
+【DEBUG - rotation】idx-0: simd_quatf(real: 0.5183094, imag: SIMD3<Float>(0.6954519, -0.48867315, 0.10247047))
+【DEBUG - rotation】idx-1: simd_quatf(real: -0.37065881, imag: SIMD3<Float>(-0.91020036, 0.15467477, 0.11614549))
+【DEBUG - rotation】idx-2: simd_quatf(real: 0.2984045, imag: SIMD3<Float>(0.38442287, 0.83417267, 0.26951241))
+【DEBUG - rotation】idx-30: simd_quatf(real: -0.6968962, imag: SIMD3<Float>(0.6848885, 0.06675589, 0.20275764))
+【DEBUG - rotation】idx-5: simd_quatf(real: 0.69607705, imag: SIMD3<Float>(-0.51789653, -0.101171054, -0.4884913))
+【DEBUG - rotation】idx-6: simd_quatf(real: -0.9201696, imag: SIMD3<Float>(0.3588045, -0.14936942, 0.07417867))
+【DEBUG - rotation】idx-7: simd_quatf(real: 0.35825032, imag: SIMD3<Float>(-0.22394805, -0.30205566, 0.8576557))
+
+【DEBUG - rotation】idx-26: simd_quatf(real: 0.5920558, imag: SIMD3<Float>(0.05121076, 0.018255979, -0.81535363))
+Swift: 26 - 最后一次计算改动: 	0.05121076, 	0.018255979, 	-0.81535363, 	0.5920558
+Unity: 26 - 最后一次计算改动:	0.05005, 		0.01906, 		-0.80798, 		0.58678
+【DEBUG - rotation】idx-25: simd_quatf(real: 0.48477447, imag: SIMD3<Float>(0.1248419, -0.4796312, -0.7343554))
+
+【DEBUG - rotation】idx-25: simd_quatf(real: 0.5792078, imag: SIMD3<Float>(-0.121681854, 0.12809688, -0.79580367))
+
+【DEBUG - rotation】idx-30: simd_quatf(real: 0.5439352, imag: SIMD3<Float>(-0.4913332, 0.57539904, 0.35944048))
+【DEBUG - rotation】idx-5: simd_quatf(real: 0.41080707, imag: SIMD3<Float>(-0.745831, 0.49693283, -0.16486946))
+【DEBUG - rotation】idx-6: simd_quatf(real: -0.59802276, imag: SIMD3<Float>(0.4592182, -0.48845008, 0.44194776))
+【DEBUG - rotation】idx-7: simd_quatf(real: -0.85078675, imag: SIMD3<Float>(0.34246114, 0.13729021, -0.38440487))
+
+【DEBUG - rotation】idx-5: simd_quatf(real: 0.8081076, imag: SIMD3<Float>(-0.09248701, 0.07091123, 0.5781967))
+【DEBUG - rotation】idx-6: simd_quatf(real: -0.5479826, imag: SIMD3<Float>(0.36770746, -0.64411414, -0.39111474))
+【DEBUG - rotation】idx-7: simd_quatf(real: 0.7859196, imag: SIMD3<Float>(0.114325464, 0.52171516, 0.32890737))
+
+【DEBUG - rotation】idx-6: simd_quatf(real: -0.5483729, imag: SIMD3<Float>(-0.34013236, -0.46575087, -0.5472846))
+【DEBUG - rotation】idx-7: simd_quatf(real: 0.31151938, imag: SIMD3<Float>(-0.73331314, -0.44633016, -0.3304617))
+
+【DEBUG - rotation】idx-7: simd_quatf(real: 0.37228364, imag: SIMD3<Float>(-0.36089957, 0.063187, 0.8527391))
+
+【DEBUG - rotation】idx-29: simd_quatf(real: -0.4450489, imag: SIMD3<Float>(-0.50830364, -0.40292126, 0.613841))
+【DEBUG - rotation】idx-0: simd_quatf(real: -0.61328936, imag: SIMD3<Float>(-0.594653, 0.031535983, 0.5161873))
+【DEBUG - rotation】idx-1: simd_quatf(real: 0.3364912, imag: SIMD3<Float>(0.67223114, -0.35913718, -0.553477))
+【DEBUG - rotation】idx-2: simd_quatf(real: 0.13838741, imag: SIMD3<Float>(0.92561483, 0.3240599, 0.15753764))
+
+【DEBUG - rotation】idx-0: simd_quatf(real: -0.6499567, imag: SIMD3<Float>(-0.21748076, 0.05286777, 0.72690725))
+【DEBUG - rotation】idx-1: simd_quatf(real: -0.27749905, imag: SIMD3<Float>(0.15330973, 0.59966934, 0.7357006))
+【DEBUG - rotation】idx-2: simd_quatf(real: -0.37266973, imag: SIMD3<Float>(-0.36626136, 0.8036806, 0.29696846))
+
+【DEBUG - rotation】idx-1: simd_quatf(real: -0.77187085, imag: SIMD3<Float>(-0.1693597, 0.19620183, 0.57606906))
+【DEBUG - rotation】idx-2: simd_quatf(real: 0.46191308, imag: SIMD3<Float>(-0.4530111, -0.73958725, -0.19060943))
+
+【DEBUG - rotation】idx-2: simd_quatf(real: -0.5985136, imag: SIMD3<Float>(0.17110671, -0.500645, 0.601547))
+
+【DEBUG - rotation】idx-19: simd_quatf(real: -0.66293526, imag: SIMD3<Float>(0.10999122, -0.023342192, -0.740929))
+【DEBUG - rotation】idx-20: simd_quatf(real: -0.61626256, imag: SIMD3<Float>(-0.267942, -0.5628167, -0.48284143))
+【DEBUG - rotation】idx-21: simd_quatf(real: -0.08770535, imag: SIMD3<Float>(-0.9216942, -0.34156686, -0.1672107))
+【DEBUG - rotation】idx-22: simd_quatf(real: -0.041901276, imag: SIMD3<Float>(-0.8569933, -0.07446699, 0.51036215))
+
+【DEBUG - rotation】idx-20: simd_quatf(real: -0.87434196, imag: SIMD3<Float>(0.1400236, 0.0897294, -0.36606473))
+【DEBUG - rotation】idx-21: simd_quatf(real: 0.23103258, imag: SIMD3<Float>(-0.8764115, -0.05393754, 0.32164666))
+【DEBUG - rotation】idx-22: simd_quatf(real: -0.0645012, imag: SIMD3<Float>(0.94557464, -0.10689615, -0.14208743))
+
+【DEBUG - rotation】idx-21: simd_quatf(real: -0.36316264, imag: SIMD3<Float>(0.30301666, -0.09339292, -0.8844815))
+【DEBUG - rotation】idx-22: simd_quatf(real: -0.058512263, imag: SIMD3<Float>(0.7211845, -0.3414081, -0.55090815))
+
+【DEBUG - rotation】idx-15: simd_quatf(real: -0.8562919, imag: SIMD3<Float>(0.03075105, 0.08354208, 0.509844))
+【DEBUG - rotation】idx-16: simd_quatf(real: -0.5777253, imag: SIMD3<Float>(0.6288331, -0.17533034, 0.49145967))
+【DEBUG - rotation】idx-17: simd_quatf(real: -0.14233708, imag: SIMD3<Float>(0.5126212, -0.8467494, 0.042609707))
+【DEBUG - rotation】idx-18: simd_quatf(real: 0.5279731, imag: SIMD3<Float>(0.23505357, -0.8060495, 0.13597053))
+
+【DEBUG - rotation】idx-16: simd_quatf(real: 0.23196033, imag: SIMD3<Float>(0.2509683, -0.0731429, -0.8084607))
+【DEBUG - rotation】idx-17: simd_quatf(real: 0.056519352, imag: SIMD3<Float>(0.1893408, -0.75523776, -0.4095713))
+【DEBUG - rotation】idx-18: simd_quatf(real: -0.060924232, imag: SIMD3<Float>(0.04751506, -0.8603866, -0.18071948))
+
+【DEBUG - rotation】idx-17: simd_quatf(real: 0.91409695, imag: SIMD3<Float>(0.12961738, -0.20834726, -0.15108322))
+【DEBUG - rotation】idx-18: simd_quatf(real: 0.3870567, imag: SIMD3<Float>(0.019869365, -0.7224242, -0.20831269))

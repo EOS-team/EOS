@@ -1,0 +1,48 @@
+diff a/drivers/dma/bcm2835-dma.c b/drivers/dma/bcm2835-dma.c	(rejected hunks)
+@@ -449,8 +679,16 @@ static void bcm2835_dma_start_desc(struct bcm2835_chan *c)
+ 
+ 	c->desc = d = to_bcm2835_dma_desc(&vd->tx);
+ 
+-	writel(d->cb_list[0].paddr, c->chan_base + BCM2835_DMA_ADDR);
+-	writel(BCM2835_DMA_ACTIVE, c->chan_base + BCM2835_DMA_CS);
++	if (c->is_40bit_channel) {
++		writel(to_bcm2711_cbaddr(d->cb_list[0].paddr),
++		       c->chan_base + BCM2711_DMA40_CB);
++		writel(BCM2711_DMA40_ACTIVE | BCM2711_DMA40_CS_FLAGS(c->dreq),
++		       c->chan_base + BCM2711_DMA40_CS);
++	} else {
++		writel(d->cb_list[0].paddr, c->chan_base + BCM2835_DMA_ADDR);
++		writel(BCM2835_DMA_ACTIVE | BCM2835_DMA_CS_FLAGS(c->dreq),
++		       c->chan_base + BCM2835_DMA_CS);
++	}
+ }
+ 
+ static irqreturn_t bcm2835_dma_callback(int irq, void *data)
+@@ -477,7 +715,7 @@ static irqreturn_t bcm2835_dma_callback(int irq, void *data)
+ 	 * if this IRQ handler is threaded.) If the channel is finished, it
+ 	 * will remain idle despite the ACTIVE flag being set.
+ 	 */
+-	writel(BCM2835_DMA_INT | BCM2835_DMA_ACTIVE,
++	writel(BCM2835_DMA_INT | BCM2835_DMA_ACTIVE | BCM2835_DMA_CS_FLAGS(c->dreq),
+ 	       c->chan_base + BCM2835_DMA_CS);
+ 
+ 	d = c->desc;
+@@ -975,13 +1348,17 @@ static int bcm2835_dma_probe(struct platform_device *pdev)
+ 		irq[i] = platform_get_irq(pdev, i < 11 ? i : 11);
+ 	}
+ 
++	chan_count = 0;
++
+ 	/* get irqs for each channel */
+-	for (i = 0; i <= BCM2835_DMA_MAX_DMA_CHAN_SUPPORTED; i++) {
++	for (i = chan_start; i < chan_end; i++) {
+ 		/* skip channels without irq */
+ 		if (irq[i] < 0)
+ 			continue;
+ 
+ 		/* check if there are other channels that also use this irq */
++		/* FIXME: This will fail if interrupts are shared across
++		   instances */
+ 		irq_flags = 0;
+ 		for (j = 0; j <= BCM2835_DMA_MAX_DMA_CHAN_SUPPORTED; j++)
+ 			if ((i != j) && (irq[j] == irq[i])) {

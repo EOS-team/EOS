@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0C014A27-3D3A-4B3E-AF28-E347ACB0B892"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E414D61F-291C-4389-B3C7-A85172FD53E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KeyPointCenter/KeyPoint/AvatarManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "547"
+            endingLineNumber = "547"
+            landmarkName = "poseUpdate(keyPoints:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E414D61F-291C-4389-B3C7-A85172FD53E3 - 911ce3d313223ffe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KeyPointCenter.AvatarManager.setInitTPose() -&gt; ()"
+                  moduleName = "KeyPointCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/future/Desktop/KeyPointCenter/KeyPointCenter/KeyPoint/AvatarManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "544"
+                  endingLineNumber = "544"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "E414D61F-291C-4389-B3C7-A85172FD53E3 - 1da5ba6d57dbe735"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KeyPointCenter.AvatarManager.poseUpdate(keyPoints: Swift.Array&lt;KeyPointCenter.KeyPoint&gt;) -&gt; ()"
+                  moduleName = "KeyPointCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/future/Desktop/KeyPointCenter/KeyPointCenter/KeyPoint/AvatarManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "544"
+                  endingLineNumber = "544"
+                  offsetFromSymbolStart = "33028">
+               </Location>
+               <Location
+                  uuid = "E414D61F-291C-4389-B3C7-A85172FD53E3 - 1da5ba6d57dbe748"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KeyPointCenter.AvatarManager.poseUpdate(keyPoints: Swift.Array&lt;KeyPointCenter.KeyPoint&gt;) -&gt; ()"
+                  moduleName = "KeyPointCenter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/future/Desktop/KeyPointCenter/KeyPointCenter/KeyPoint/AvatarManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "547"
+                  endingLineNumber = "547"
+                  offsetFromSymbolStart = "33644">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70550A6F-1455-4DCE-BEFF-3A6B64240C34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KeyPointCenter/KeyPoint/AvatarManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "467"
+            endingLineNumber = "467"
+            landmarkName = "poseUpdate(keyPoints:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E87ABA5-2DA1-42D5-A3A8-A90441FB823F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KeyPointCenter/KeyPoint/AvatarManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "458"
+            endingLineNumber = "458"
+            landmarkName = "poseUpdate(keyPoints:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
